@@ -1,0 +1,23 @@
+{
+  "_comment": "交付稿结构。main.arcs 是 [幕名, [段key...]] 的数组；side 用 keys 或 keys_from 选段；supplement 用 keys 单独成篇。",
+  "main": {
+    "title": "《游戏名》版本「活动名」主线全剧情文本",
+    "file": "transcript.md",
+    "arcs": [
+      ["第一幕", ["01_intro"]],
+      ["第二幕", ["02_next"]]
+    ]
+  },
+  "side": {
+    "enabled": false,
+    "title": "《游戏名》版本「活动名」支线全剧情文本",
+    "file": "transcript-side.md",
+    "keys": []
+  },
+  "supplement": {
+    "enabled": false,
+    "title": "《游戏名》版本「活动名」遗漏对话补录",
+    "file": "transcript-supplement.md",
+    "keys": []
+  }
+}

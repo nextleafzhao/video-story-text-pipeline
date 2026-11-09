@@ -1,0 +1,21 @@
+{
+  "main": {
+    "title": "示例剧情文本",
+    "file": "transcript.md",
+    "arcs": [
+      ["示例", ["01_intro"]]
+    ]
+  },
+  "side": {
+    "enabled": false,
+    "title": "示例支线文本",
+    "file": "transcript-side.md",
+    "keys": []
+  },
+  "supplement": {
+    "enabled": false,
+    "title": "示例遗漏对话补录",
+    "file": "transcript-supplement.md",
+    "keys": []
+  }
+}

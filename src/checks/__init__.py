@@ -1,0 +1,1 @@
+"""Quality gates and configuration checks."""

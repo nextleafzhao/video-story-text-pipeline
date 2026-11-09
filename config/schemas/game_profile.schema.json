@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "game_profile.json",
+  "type": "object",
+  "properties": {
+    "ui_words": {"type": "array", "items": {"type": "string"}},
+    "noise_words": {"type": "array", "items": {"type": "string"}},
+    "series_titles": {"type": "array", "items": {"type": "string"}},
+    "extra_name_whitelist": {"type": "array", "items": {"type": "string"}},
+    "player_names": {"type": "array", "items": {"type": "string"}},
+    "map_panel_keys": {"type": "array", "items": {"type": "string"}},
+    "tips_keys": {"type": "array", "items": {"type": "string"}},
+    "name_fix": {"type": "object", "additionalProperties": {"type": "string"}},
+    "typo_fix": {"type": "object", "additionalProperties": {"type": "string"}}
+  }
+}

@@ -1,0 +1,24 @@
+# runtime artifacts
+work/
+__pycache__/
+*.pyc
+*.raw
+*.mp4
+*.mkv
+
+# local config (keep .example files)
+config/pipeline.json
+config/segments.json
+config/game_profile.json
+config/assemble.json
+
+# backups
+*.md.bak
+
+# wiki / agent caches
+BWiki/
+.codeartsdoer/
+
+# OS
+Thumbs.db
+.DS_Store

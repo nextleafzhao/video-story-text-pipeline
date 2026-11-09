@@ -1,0 +1,16 @@
+{
+  "videos": [
+    {
+      "key": "01_intro",
+      "title": "示例段落标题",
+      "file": "example_video.mp4",
+      "duration": 600
+    },
+    {
+      "key": "02_next",
+      "title": "下一段标题",
+      "file": "another_video.mp4",
+      "duration": 1200
+    }
+  ]
+}

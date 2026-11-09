@@ -1,0 +1,1 @@
+"""Shared helpers: paths, config, reports."""

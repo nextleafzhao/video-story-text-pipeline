@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "pipeline.json",
+  "type": "object",
+  "required": ["ffmpeg", "video_dirs", "crop", "ocr", "fps"],
+  "properties": {
+    "ffmpeg": {"type": "string"},
+    "video_dirs": {"type": "array", "items": {"type": "string"}},
+    "crop": {
+      "type": "object",
+      "required": ["band", "panel", "opt", "desc"],
+      "additionalProperties": {
+        "type": "object",
+        "required": ["w", "h", "x", "y"],
+        "properties": {
+          "w": {"type": "integer", "minimum": 1},
+          "h": {"type": "integer", "minimum": 1},
+          "x": {"type": "integer", "minimum": 0},
+          "y": {"type": "integer", "minimum": 0}
+        }
+      }
+    },
+    "ocr": {
+      "type": "object",
+      "required": ["workers", "scale", "step"],
+      "properties": {
+        "workers": {"type": "integer", "minimum": 1},
+        "scale": {"type": "number", "exclusiveMinimum": 0},
+        "step": {"type": "integer", "minimum": 1}
+      }
+    },
+    "fps": {"type": "number", "exclusiveMinimum": 0}
+  }
+}

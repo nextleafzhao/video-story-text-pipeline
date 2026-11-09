@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "assemble.json",
+  "type": "object",
+  "required": ["main"],
+  "properties": {
+    "main": {
+      "type": "object",
+      "required": ["title", "file", "arcs"],
+      "properties": {
+        "title": {"type": "string"},
+        "file": {"type": "string"},
+        "arcs": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": [
+              {"type": "string"},
+              {"type": "array", "items": {"type": "string"}}
+            ]
+          }
+        }
+      }
+    },
+    "side": {
+      "type": "object",
+      "properties": {
+        "enabled": {"type": "boolean"},
+        "title": {"type": "string"},
+        "file": {"type": "string"},
+        "keys": {"type": "array", "items": {"type": "string"}},
+        "keys_from": {"type": "string"},
+        "arcs": {"type": "array"}
+      }
+    },
+    "supplement": {
+      "type": "object",
+      "properties": {
+        "enabled": {"type": "boolean"},
+        "title": {"type": "string"},
+        "file": {"type": "string"},
+        "keys": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}
