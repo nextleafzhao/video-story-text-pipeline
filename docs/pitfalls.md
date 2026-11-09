@@ -7,6 +7,7 @@
 - B 站分P用 yutto 下载；视频目录只读，不移动、不改名、不删除。
 - 定位视频按文件名匹配，不依赖合集目录名。
 - 分P清单以 B 站 API 为准，不以本地 dir 顺序为准。
+- 下载：`yutto "https://www.bilibili.com/video/BV1ACxS67ErC/" -b -p 1~25 -q 116 -tp "{title}/{name}" -d "<下载目录>"`。
 
 ## 抽帧与裁切
 
